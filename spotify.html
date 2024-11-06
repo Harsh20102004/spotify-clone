@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming UI</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><img src="user1.jpg" alt="User 1"></li>
+                <li><img src="user2.jpg" alt="User 2"></li>
+                <li><img src="user3.jpg" alt="User 3"></li>
+                <li><img src="user4.jpg" alt="User 2"></li>
+                <li><img src="user5.jpg" alt="User 2"></li>
+                <li><img src="user6.jpg" alt="User 2"></li>
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <header>
+                <input type="text" placeholder="What do you want to play?" class="search-bar">
+                <button class="premium-button">Explore Premium</button>
+            </header>
+
+            <!-- Now playing song -->
+            <div class="now-playing">
+                <img src="album-cover.jpg" alt="Album Cover" class="album-cover">
+                <div class="song-info">
+                    <h1>O Beliya</h1>
+                    <p>Darshan Raval</p>
+                    <button class="play-button">Play</button>
+                </div>
+            </div>
+
+            <!-- Recommended playlists -->
+            <div class="playlists">
+                <img class="images" src="101.jpg" alt="Album Cover" class="album-cover">
+                <img class="images" src="radio.jpg" alt="Album Cover" class="album-cover">
+                <img class="images" src="shubh.jpg" alt="Album Cover" class="album-cover">
+                <img class="images" src="honey.jpg" alt="Album Cover" class="album-cover">
+                <img class="images" src="emiway.jpg" alt="Album Cover" class="album-cover">
+                <img class="images" src="ap.jpg" alt="Album Cover" class="album-cover">
+            </div>
+        </div>
+    </div>
+
+    <div class="music-control">
+        <div class="media-controls">
+            <br>
+            <span class="time start-time">0:10</span>
+            <input type="range" class="progress-bar" min="0" max="100" value="10">
+            <span class="time end-time">1:00</span>
+        </div>
+        <div class="controls">
+            <button class="control-button love">&#10084;</button>
+            <button class="control-button prev">&#9664;</button>
+            <button class="control-button play">&#10074;&#10074;</button>
+            <button class="control-button next">&#9654;</button>
+            <button class="control-button minimize">&#9472;</button>
+        </div>
+    </div>
+
+    <audio id="audio" src="your-audio-file.mp3" preload="auto"></audio>
+<script src="spotify.js"></script>
+
+<!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
